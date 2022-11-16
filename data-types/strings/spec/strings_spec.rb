@@ -204,7 +204,7 @@ RSpec.describe 'Strings' do
   it 'test 23' do
     phrase = "  \n\t to the moon\n\n\t    "
     # In place of the line below, call a method to acheive the expected outcome
-    actual = phrase.replace("to the moon")
+    actual = phrase.strip
     expected = "to the moon"
 
     expect(actual).to eq(expected)
