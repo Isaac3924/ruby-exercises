@@ -15,10 +15,10 @@ RSpec.describe 'Arrays' do
   end
 
   it 'test 2' do
+    nums = [1,2,3]
     # in the line below, call a method on the nums variable
     # defined above to access the second element
-
-    nums = [1,2,3]
+    require "pry"; binding.pry
     actual = nums.fetch(1)
 
     expected = 2
